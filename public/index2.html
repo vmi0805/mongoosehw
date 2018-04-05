@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Token Web Scrapper</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class ="container">
+		<div id="top">
+			<h1>Welcome to the ICO marketplace web scrapper application...</h1><h2>Choose one of the following features</h2>
+
+			<div id="holder">
+				<button class="push_button_blue">Manage material</button>
+			</div>
+
+			<div class="dropdown">
+				<button class="push_button_red" onclick="scrape()">Scrape websites</button>
+			</div>
+		</div>
+
+		<div id = "middle">
+			<table id = "results">
+				<thead>
+					<tr>
+						<th id = "tableCoin">Coin</th>
+						<th id = "tableDescription">Description</th>
+						<th id = "tableLink">Link</th>
+						<th id = "tableNote">Note Addition</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src = "app.js"></script>
+
+<!-- need to capture date of last scrape -->
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+/*~~~~ SET-UP ~~~~~*/
+		.container{
+			width: auto;
+			height: auto;
+			border: solid red 4px;
+			display: inline-block;
+			margin: 6px 6px 6px 6px;
+		}
+
+		#top{
+			width:600px;
+			height:100px;
+			border: solid grey 4px;
+			margin: 3px 3px 3px 3px;
+			background-color: rgb(238,238,238);
+		}
+
+		#middle{
+			width:600px;
+			height:auto;
+			border: solid grey 4px;
+			margin: 3px 3px 3px 3px;
+		}
+
+		#holder{
+			position: relative;
+			top: -20px;
+			right: -330px;
+		}
+
+		.push_button_blue {
+			width:110px;
+			height:50px;
+			text-align: middle;
+			color: white;
+			font-weight: bold;
+		/*	line-height:43px;*/
+			font-size: 16px;
+			font-family:"Palatino Linotype", "Book Antiqua", Palatino;
+			margin: 2px;
+			background-color: rgb(64,199,246);
+		/*	display: inline-block;*/
+			position: absolute;
+		}
+
+		h1{
+			font-size: 14px;
+			font-family:"Palatino Linotype", "Book Antiqua", Palatino;
+			color: black;
+			font-weight: bold;
+			margin-left: 10px;
+		}
+
+		h2{
+			font-size: 10px;
+			font-family:"Palatino Linotype", "Book Antiqua", Palatino;
+			color: black;
+			font-style: italic;
+			margin-left: 10px;
+		}
+
+		.push_button_red{
+			width:110px;
+			height:50px;
+			text-align: middle;
+			color: white;
+			font-weight: bold;
+		/*	line-height:43px;*/
+			font-size: 16px;
+			font-family:"Palatino Linotype", "Book Antiqua", Palatino;
+		/*	display: block;*/
+			margin: 2px;
+			background-color: rgb(230,96,115);
+			position: relative;
+			top: -20px;
+			right: -180px;
+			margin-left: 20px;
+		    cursor: pointer;
+		}
+
+
+
+
+
