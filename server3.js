@@ -6,17 +6,18 @@ var mongoose = require("mongoose");
 var cheerio = require("cheerio");
 var request = require("request");
 var mongojs = require("mongojs");
+var path = require("path");
 
 var db = mongojs('coins', ["coinsdb"]);
 
-var PORT = 3000;
+var PORT = 8080;
 
 var app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/coins")
+// mongoose.connect("mongodb://localhost/coins")
 
 // ~~~ Start server ~~~
 
@@ -29,6 +30,13 @@ app.listen(PORT, function() {
 app.get("/hi", function(req, res) {
   res.send("Hello world");
 });
+
+
+// Main HTML routing
+
+ app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "/public/index2.html"));
+  });
 
 
 // ~~~ Scraping ~~~
@@ -70,8 +78,8 @@ app.get("/coins", function(req, res){
       console.log(err);
     }
     else {
-      // res.send(found);
-      // console.log(found)
+      res.send(found);
+      console.log(found)
     }
   });
 
